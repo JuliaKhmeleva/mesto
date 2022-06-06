@@ -1,0 +1,40 @@
+
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+  
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-Regular"),
+         /* Если не получилось, загрузит woff2 */
+         url("./Inter-Regular.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("./Inter-Regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: black;
+    font-weight: 900;
+  
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-Black"),
+         /* Если не получилось, загрузит woff2 */
+         url("./Inter-Black.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("./Inter-Black.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: bold;
+    font-weight: 700;
+  
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-Bold"),
+         /* Если не получилось, загрузит woff2 */
+         url("./Inter-Bold.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("./Inter-Bold.woff") format("woff");
+  }
