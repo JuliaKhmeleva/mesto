@@ -1,0 +1,366 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+
+
+.page {
+    margin: 0;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    text-rendering: optimizeLegibility;
+    color: white;
+    background-color: #000000;
+    
+}
+
+.header {
+    margin: auto;
+    max-width: 880px;
+    border-bottom: #545454;
+    border-bottom-width: 1px; 
+    border-bottom-style: solid; 
+    height: auto;
+    box-sizing: content-box;
+}
+
+@media screen and (min-width: 918px) {
+    .header {
+        width: 880px;
+    }
+}
+
+@media screen and (max-width: 917px) {
+    .header {
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (min-width: 918px) {
+    .header__logo {
+        height: 33px;
+        width: 142px;
+        margin: 45px auto 41px 0;
+    }
+}
+
+@media screen and (max-width: 917px) {
+    .header__logo {
+        width: 104px;
+        height: 24px;
+        margin: 28px auto 31px 27px;
+    }
+}
+
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    max-width: 880px;
+
+}
+
+@media screen and (min-width: 918px) {
+    .profile {
+        margin: 40px auto 0 auto;
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (max-width: 917px) {
+    .profile {
+        margin: 42px 19px 0 19px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+
+.profile__avatar {
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+}
+
+@media screen and (min-width: 918px) {
+    .profile__avatar {
+        margin: 0 30px 0 0;
+    }
+}
+
+@media screen and (max-width: 917px) {
+    .profile__avatar {
+        margin: 0 auto 26px auto;
+       
+    }
+}
+
+.profile__profile-info {
+    flex-direction: column;
+    display: flex;
+}
+
+@media screen and (max-width: 917px) {
+    .profile__profile-info {
+        margin-bottom: 14px;
+    }
+}
+
+@media screen and (min-width: 918px) {
+    .profile__profile-info {
+        margin-bottom: 16px;
+    }
+}
+
+
+.profile-info__name {
+    padding: 0;
+    display: inline-block;
+}
+
+@media screen and (max-width: 917px) {
+    .profile-info__name {
+        font-size: 27px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0 10px 14px 0;
+    }
+}
+
+
+@media screen and (min-width: 918px) {
+    .profile-info__name {
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 48px;
+        margin: 0 18px 16px 0;
+    }
+}
+
+
+.profile-info__edit {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.profile-info__edit-icon {
+    padding: 0;
+    margin: 0;
+}
+
+.profile-info__edit-icon:hover {
+    opacity: 60%;
+}
+
+@media screen and (min-width: 918px) {
+    .profile-info__edit-icon {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@media screen and (max-width: 917px) {
+    .profile-info__edit-icon {
+        height: 18px;
+        width: 18px;
+    }
+}
+
+
+.profile-info__profession {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 917px) {
+    .profile-info__profession {
+        font-size: 14px;
+        line-height: auto;
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media screen and (min-width: 918px) {
+    .profile-info__profession {
+        font-size: 18px;
+        line-height: auto;
+    }
+}
+
+.figure__add-button {
+    border-color: #ffffff;
+    border-radius: 2px;
+    border-width: 2px; 
+    border-style: solid; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.figure__add-button:hover {
+    opacity: 60%;
+}
+
+
+
+@media screen and (min-width: 918px) {
+    .figure__add-button {
+        height: 50px;
+        width: 150px;
+        text-align: center;
+        margin: 0 0 0 auto;
+    }
+}
+
+@media screen and (max-width: 917px) {
+    .figure__add-button {
+        font-size: 14px;
+        line-height: auto;
+        margin: 0;
+        height: 50px;
+        width: 282px;
+        margin: 36px auto 0 auto;
+    }
+}
+
+
+.elements {
+    display: grid;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media screen and (max-width: 917px) {
+    .elements {
+        width: 282px;
+        min-width: 282px;
+        margin-top: 36px;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 619px) {
+    .elements {
+        width: 581px;
+        margin-top: 36px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 17px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 918px) {
+    .elements {
+        width: auto;
+        width: 880px;
+        margin-top: 50px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        column-gap: 17px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.element {
+    background-color: #ffffff;
+    width: 282px;
+    height: 361px;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.element__box-image {
+    width: 282px;
+    height: 282px;
+    box-sizing: content-box;
+    background-image: url(./images/elements/Dombai.jpg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.element__content {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.element__header {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.element__header {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: normal;
+    margin: 25px auto 31px 21px;
+}
+
+
+.element__like {
+    margin: 30px 20px 30px auto;
+}
+
+.element__icon-like:hover {
+    opacity: 50%;
+}
+
+.element__icon-like:active {
+    color: #000000;
+}
+
+.footer {
+    font-weight: 400;
+    color: #545454;
+}
+
+@media screen and (min-width: 918px) {
+    .footer {
+        width: 880px;
+        margin: 66px auto 60px auto;
+        font-size: 18px;
+        line-height: normal;
+        
+    }
+}
+
+@media screen and (max-width: 917px) {
+    .footer {
+        width: 100%;
+        margin-left: 19px;
+        font-size: 14px;
+        line-height: normal;
+    }
+}
