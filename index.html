@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages/index.css">
   <title>Mesto</title>
 </head>
 
@@ -20,20 +20,19 @@
             <figure class="profile__avatar"><img src="./images/profile/Avatar.jpg" class="profile__avatar" alt="Аватар"></figure>
             <div class="profile__profile-info">
                 <div class="profile-info__text">
-                    <h1 class="profile-info__name">Жак-Ив Кусто</h1>
-                    <figure class="profile-info__edit"><img src="./images/profile/Edit Button.svg" alt="Редактировать" class="profile-info__edit-icon"></figure>  
+                    <h1 class="profile-info__name"><span>Жак-Ив Кусто</span><img src="./images/profile/Edit Button.svg" alt="Редактировать" class="profile-info__edit-icon"></h1>   
                 </div>
                 <p class="profile-info__profession">Исследователь океана</p>
             </div>
 
-            <figure class="figure__add-button"><img src="./images/profile/Add Button.svg" alt="Добавить" class="figure__add-button-icon"></figure>
+            <figure class="profile__add-button"><img src="./images/profile/Add Button.svg" alt="Добавить" class="profile__add-button-icon"></figure>
         </section>
 
 
         <section class="elements">
 
             <div class="element">
-                <div class="element__box-image"></div>
+                <div class="element__box-image element__karachaevsk"></div>
                 <div class="element__content">
                     <h2 class="element__header">Карачаевск</h2>
                     <figure class="element__like"><img src="./images/elements/heart.svg" class="element__icon-like" alt="Нравится"></figure>
@@ -41,15 +40,7 @@
             </div>
 
             <div class="element">
-                <div class="element__box-image"></div>
-                <div class="element__content">
-                    <h2 class="element__header">Карачаевск</h2>
-                    <figure class="element__like"><img src="./images/elements/heart.svg" class="element__icon-like" alt="Нравится"></figure>
-                </div>
-            </div>
-
-            <div class="element">
-                <div class="element__box-image"></div>
+                <div class="element__box-image element__dombai"></div>
                 <div class="element__content">
                     <h2 class="element__header">Домбай</h2>
                     <figure class="element__like"><img src="./images/elements/heart.svg" class="element__icon-like" alt="Нравится"></figure>
@@ -57,7 +48,15 @@
             </div>
 
             <div class="element">
-                <div class="element__box-image"></div>
+                <div class="element__box-image element__posad"></div>
+                <div class="element__content">
+                    <h2 class="element__header">Сергиев-Посад</h2>
+                    <figure class="element__like"><img src="./images/elements/heart.svg" class="element__icon-like" alt="Нравится"></figure>
+                </div>
+            </div>
+
+            <div class="element">
+                <div class="element__box-image element__elbrus"></div>
                 <div class="element__content">
                     <h2 class="element__header">Эльбрус</h2>
                     <figure class="element__like"><img src="./images/elements/heart.svg" class="element__icon-like" alt="Нравится"></figure>
@@ -65,17 +64,17 @@
             </div>
 
             <div class="element">
-                <div class="element__box-image"></div>
+                <div class="element__box-image element__lisbon"></div>
                 <div class="element__content">
-                    <h2 class="element__header">Карачаевск</h2>
+                    <h2 class="element__header">Лиссабон</h2>
                     <figure class="element__like"><img src="./images/elements/heart.svg" class="element__icon-like" alt="Нравится"></figure>
                 </div>
             </div>
 
             <div class="element">
-                <div class="element__box-image"></div>
+                <div class="element__box-image element__abrau"></div>
                 <div class="element__content">
-                    <h2 class="element__header">Карачаевск</h2>
+                    <h2 class="element__header">Абрау-Дюрсо</h2>
                     <figure class="element__like"><img src="./images/elements/heart.svg" class="element__icon-like" alt="Нравится"></figure>
                 </div>
             </div>
@@ -94,13 +93,14 @@
             <img class="popup__icon" src="./images/pop-up/Close Icon.svg" alt="Закрыть">
             <h3 class="popup__header">Редактировать профиль</h3>
             <form class="popup__form">
-                <input class="popup__input" type="text" name="name" />
-                <input class="popup__input" type="text" name="profession" />
-                <button class="popup__button"></button>
+                <input class="popup__input" type="text" name="name" placeholder="Ваше имя" value="">
+                <input class="popup__input" type="text" name="profession" placeholder="Ваша профессия" value=""/>
+                <button class="popup__button">Сохранить</button>
             </form>
         </div>
     </div>
 
+    <script src="script/script.js"></script>
 </body>
 
 </html>

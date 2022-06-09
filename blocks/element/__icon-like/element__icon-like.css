@@ -1,0 +1,7 @@
+.element__icon-like:hover {
+    opacity: 50%;
+}
+
+.element__icon-like:active {
+    color: #000000;
+}
