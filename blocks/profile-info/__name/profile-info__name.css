@@ -1,0 +1,23 @@
+.profile-info__name {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 917px) {
+    .profile-info__name {
+        font-size: 27px;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 14px;
+    }
+}
+
+
+@media screen and (min-width: 918px) {
+    .profile-info__name {
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 48px;
+        margin-bottom: 16px;
+    }
+}

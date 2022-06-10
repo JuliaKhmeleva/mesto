@@ -9,11 +9,98 @@
 </head>
 
 <body class="page">
-    <header></header>
-    <main>
-        <section></section>
+
+    <header class="header">
+        <figure class="header__logo"><img src="./images/header/logo.svg" alt="Логотип" class="header__logo_img"></figure>
+    </header>
+
+    <main class="content">
+
+        <section class="profile">
+            <figure class="profile__avatar"><img src="./images/profile/Avatar.jpg" class="profile__avatar" alt="Аватар"></figure>
+            <div class="profile__profile-info">
+                <div class="profile-info__text">
+                    <h1 class="profile-info__name"><span>Жак-Ив Кусто</span><img src="./images/profile/Edit Button.svg" alt="Редактировать" class="profile-info__edit-icon"></h1>   
+                </div>
+                <p class="profile-info__profession">Исследователь океана</p>
+            </div>
+
+            <figure class="profile__add-button"><img src="./images/profile/Add Button.svg" alt="Добавить" class="profile__add-button-icon"></figure>
+        </section>
+
+
+        <section class="elements">
+
+            <div class="element">
+                <div class="element__box-image element__karachaevsk"></div>
+                <div class="element__content">
+                    <h2 class="element__header">Карачаевск</h2>
+                    <figure class="element__like"><img src="./images/elements/heart.svg" class="element__icon-like" alt="Нравится"></figure>
+                </div>
+            </div>
+
+            <div class="element">
+                <div class="element__box-image element__dombai"></div>
+                <div class="element__content">
+                    <h2 class="element__header">Домбай</h2>
+                    <figure class="element__like"><img src="./images/elements/heart.svg" class="element__icon-like" alt="Нравится"></figure>
+                </div>
+            </div>
+
+            <div class="element">
+                <div class="element__box-image element__posad"></div>
+                <div class="element__content">
+                    <h2 class="element__header">Сергиев-Посад</h2>
+                    <figure class="element__like"><img src="./images/elements/heart.svg" class="element__icon-like" alt="Нравится"></figure>
+                </div>
+            </div>
+
+            <div class="element">
+                <div class="element__box-image element__elbrus"></div>
+                <div class="element__content">
+                    <h2 class="element__header">Эльбрус</h2>
+                    <figure class="element__like"><img src="./images/elements/heart.svg" class="element__icon-like" alt="Нравится"></figure>
+                </div>
+            </div>
+
+            <div class="element">
+                <div class="element__box-image element__lisbon"></div>
+                <div class="element__content">
+                    <h2 class="element__header">Лиссабон</h2>
+                    <figure class="element__like"><img src="./images/elements/heart.svg" class="element__icon-like" alt="Нравится"></figure>
+                </div>
+            </div>
+
+            <div class="element">
+                <div class="element__box-image element__abrau"></div>
+                <div class="element__content">
+                    <h2 class="element__header">Абрау-Дюрсо</h2>
+                    <figure class="element__like"><img src="./images/elements/heart.svg" class="element__icon-like" alt="Нравится"></figure>
+                </div>
+            </div>
+
+        </section>
+
+
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+        <p class="footer__text">© 2020 Mesto Russia</p>
+    </footer>
+
+    <div class="popup">
+        <div class="popup__container">
+            <img class="popup__icon" src="./images/pop-up/Close Icon.svg" alt="Закрыть">
+            <h3 class="popup__header">Редактировать профиль</h3>
+            <form class="popup__form">
+                <input class="popup__input" type="text" name="name" placeholder="Ваше имя" value="">
+                <input class="popup__input" type="text" name="profession" placeholder="Ваша профессия" value=""/>
+                <button class="popup__button">Сохранить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
 </body>
 
 </html>
