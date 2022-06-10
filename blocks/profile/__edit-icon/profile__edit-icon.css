@@ -1,16 +1,16 @@
-.profile-info__edit-icon {
+.profile__edit-icon{
     padding: 0;
     margin: 0;
     display: inline;
     cursor: pointer;
 }
 
-.profile-info__edit-icon:hover {
+.profile__edit-icon:hover {
     opacity: 60%;
 }
 
 @media screen and (min-width: 918px) {
-    .profile-info__edit-icon {
+    .profile__edit-icon {
         height: 24px;
         width: 24px;
         margin-left: 18px;
@@ -18,7 +18,7 @@
 }
 
 @media screen and (max-width: 917px) {
-    .profile-info__edit-icon {
+    .profile__edit-icon {
         height: 18px;
         width: 18px;
         margin-left: 10px;
