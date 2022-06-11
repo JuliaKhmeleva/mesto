@@ -17,15 +17,16 @@
     <main class="content">
 
         <section class="profile">
-            <figure class="profile__avatar"><img src="./images/profile/Avatar.jpg" class="profile__avatar" alt="Аватар"></figure>
+            <figure class="profile__avatar"><img src="./images/profile/Avatar.jpg" class="profile__avatar-icon" alt="Аватар"></figure>
             <div class="profile__info">
                 <div class="profile__text">
-                    <h1 class="profile__name"><span>Жак-Ив Кусто</span><img src="./images/profile/Edit-Button.svg" alt="Редактировать" class="profile__edit-icon"></h1>   
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button type="button" class="profile__edit-icon"></button>   
                 </div>
                 <p class="profile__profession">Исследователь океана</p>
             </div>
 
-            <figure class="profile__add-button"><img src="./images/profile/Add-Button.svg" alt="Добавить" class="profile__add-button-icon"></figure>
+            <button type="button" class="profile__add-button"></button>
         </section>
 
 
@@ -90,7 +91,7 @@
 
     <div class="popup">
         <div class="popup__container">
-            <img class="popup__icon" src="./images/pop-up/Close-Icon.svg" alt="Закрыть">
+            <button class="popup__icon" type="button"></button>
             <h3 class="popup__header">Редактировать профиль</h3>
             <form class="popup__form">
                 <input class="popup__input" type="text" name="name" placeholder="Ваше имя" value="">

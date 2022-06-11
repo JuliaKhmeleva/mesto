@@ -8,6 +8,8 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background-image: url(../../../images/profile/Add-Button.svg);
+    background-color: transparent;
     
 }
 
@@ -23,6 +25,9 @@
         width: 150px;
         text-align: center;
         margin: 0 0 0 16px;
+        background-size: 22px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
@@ -33,5 +38,8 @@
         height: 50px;
         width: 282px;
         margin: 36px auto 0 auto;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }

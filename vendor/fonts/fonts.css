@@ -26,29 +26,17 @@
          url("./Inter-Black.woff") format("woff");
   }
 
-  @font-face {
-    font-family: "Inter";
-    font-style: bold;
-    font-weight: 700;
-  
-    /* Браузер сначала попробует найти шрифт локально */
-    src: local("Inter-Bold"),
-         /* Если не получилось, загрузит woff2 */
-         url("./Inter-Bold.woff2") format("woff2"),
-         /* Если браузер не поддерживает woff2, загрузит woff */
-         url("./Inter-Bold.woff") format("woff");
-  }
 
 
   @font-face {
      font-family: "Inter";
      font-style: medium;
-     font-weight: 600;
+     font-weight: 500;
    
      /* Браузер сначала попробует найти шрифт локально */
-     src: local("Inter-Meduim"),
+     src: local("Inter-Medium"),
           /* Если не получилось, загрузит woff2 */
-          url("./Inter-Meduim.woff2") format("woff2"),
+          url("./Inter-Medium.woff2") format("woff2"),
           /* Если браузер не поддерживает woff2, загрузит woff */
-          url("./Inter-Meduim.woff") format("woff");
+          url("./Inter-Medium.woff") format("woff");
    }

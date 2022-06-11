@@ -3,6 +3,12 @@
     margin: 0;
     display: inline;
     cursor: pointer;
+    background-image: url(../../../images/profile/Edit-Button.svg);
+    border: none;
+    background-color: transparent;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
 }
 
 .profile__edit-icon:hover {
@@ -11,16 +17,19 @@
 
 @media screen and (min-width: 918px) {
     .profile__edit-icon {
-        height: 24px;
-        width: 24px;
+        height: 30px;
+        width: 22px;
         margin-left: 18px;
+        background-size: 22px;
+   
     }
 }
 
 @media screen and (max-width: 917px) {
     .profile__edit-icon {
-        height: 18px;
+        height: 20px;
         width: 18px;
         margin-left: 10px;
+        background-size: 18px;
     }
 }

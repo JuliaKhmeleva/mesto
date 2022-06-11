@@ -1,12 +1,12 @@
 let popup = document.querySelector('.popup');
 
-let button = document.querySelector('.profile-info__edit-icon');
+let button = document.querySelector('.profile__edit-icon');
 let closeButton = document.querySelector('.popup__icon');
 
 let inputName = document.querySelector('.popup__input[name="name"]');
 let inputProfession = document.querySelector('.popup__input[name="profession"]');
-let profileName = document.querySelector('.profile-info__name span');
-let profileProfession = document.querySelector('.profile-info__profession');
+let profileName = document.querySelector('.profile__name');
+let profileProfession = document.querySelector('.profile__profession');
 
 
 function openClick() {
