@@ -12,5 +12,11 @@
         width: 104px;
         height: 24px;
         margin: 28px auto 31px 27px;
+
     }
+}
+
+.header__logo {
+    padding: 0;
+    
 }

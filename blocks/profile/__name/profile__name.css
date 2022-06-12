@@ -4,6 +4,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; 
+    max-width: 514px;
     
    
 }
@@ -13,7 +14,6 @@
         font-size: 27px;
         font-weight: 500;
         line-height: normal;
-        max-width: 514px;
     }
 }
 
@@ -23,6 +23,5 @@
         font-size: 42px;
         font-weight: 500;
         line-height: 48px;
-        max-width: 514px;
     }
 }
