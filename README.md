@@ -1,4 +1,4 @@
-# Проект: Место, можно посмотреть по ссылке: https://github.com/JuliaKhmeleva/mesto.git
+# Проект: Место, можно посмотреть по ссылке: https://github.com/JuliaKhmeleva/mesto.git https://juliakhmeleva.github.io/mesto/
 
 
 ### Описание проекта: 
