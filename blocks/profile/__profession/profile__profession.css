@@ -2,13 +2,13 @@
     padding: 0;
     margin: 0;
     font-weight: 400;
+    line-height: auto;
 }
 
 
 @media screen and (max-width: 917px) {
     .profile__profession {
         font-size: 14px;
-        line-height: auto;
         margin: 0 auto 0 auto;
     }
 }
@@ -16,6 +16,5 @@
 @media screen and (min-width: 918px) {
     .profile__profession {
         font-size: 18px;
-        line-height: auto;
     }
 }

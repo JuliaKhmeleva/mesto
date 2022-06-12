@@ -4,15 +4,3 @@
     display: flex;
     flex: 1;
 }
-
-@media screen and (max-width: 917px) {
-    .profile__info {
-        margin-bottom: 14px;
-    }
-}
-
-@media screen and (min-width: 918px) {
-    .profile__info {
-        
-    }
-}

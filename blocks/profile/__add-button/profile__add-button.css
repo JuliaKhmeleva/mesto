@@ -10,6 +10,8 @@
     cursor: pointer;
     background-image: url(../../../images/profile/Add-Button.svg);
     background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
     
 }
 
@@ -26,8 +28,6 @@
         text-align: center;
         margin: 0 0 0 16px;
         background-size: 22px;
-        background-repeat: no-repeat;
-        background-position: center;
     }
 }
 
@@ -39,7 +39,6 @@
         width: 282px;
         margin: 36px auto 0 auto;
         background-size: 16px;
-        background-repeat: no-repeat;
-        background-position: center;
+    
     }
 }
