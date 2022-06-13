@@ -3,6 +3,10 @@
     margin: 0;
     font-weight: 400;
     line-height: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 514px;
 }
 
 
@@ -10,11 +14,18 @@
     .profile__profession {
         font-size: 14px;
         margin: 0 auto 0 auto;
+        max-width: 581px;
     }
 }
 
 @media screen and (min-width: 918px) {
     .profile__profession {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 618px) {
+    .profile__profession {
+        max-width: 282px;
     }
 }

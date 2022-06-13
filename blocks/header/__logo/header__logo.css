@@ -17,6 +17,5 @@
 }
 
 .header__logo {
-    padding: 0;
-    
+    vertical-align: top;
 }
