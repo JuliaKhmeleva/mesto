@@ -7,4 +7,5 @@
     position: relative;
     background-size: cover;
     border-radius: 10px 10px 0 0;
+    vertical-align: top;
 }

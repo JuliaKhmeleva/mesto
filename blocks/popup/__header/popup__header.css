@@ -10,7 +10,7 @@
     .popup__header {
         font-size: 24px;
         margin: 32px 64px 18px 36px;
-        height: 29px;
+        
         
     }
 }
@@ -19,7 +19,6 @@
     .popup__header {
         font-size: 18px;
         line-height: 22px;
-        height: 22px;
         margin: 25px 22px 0 22px;
     }
 }

@@ -9,6 +9,9 @@
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+    row-gap: 20px;
+    column-gap: 17px;
+    text-align: center;
 
 }
 
@@ -17,19 +20,13 @@
         max-width: 581px;
         margin-top: 36px;
         grid-template-columns: repeat(2, 1fr);
-        row-gap: 20px;
-        column-gap: 17px;
-        text-align: center;
     }
 }
 
 @media screen and (max-width: 618px) {
     .elements {
         max-width: 282px;
-        margin-top: 36px;
         grid-template-columns: repeat(1, 1fr);
-        column-gap: 17px;
-        text-align: center;
     }
 }
 
@@ -38,7 +35,5 @@
         max-width: 880px;
         margin-top: 50px;
         grid-template-columns: repeat(3, 1fr);
-        row-gap: 20px;
-        column-gap: 17px;
     }
 }
