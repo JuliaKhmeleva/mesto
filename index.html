@@ -32,6 +32,7 @@
 
         <section class="elements">
 
+            <template id="item-card">
             <div class="element">
                 <img src="./images/elements/Karachaevsk.jpg" alt="Карачаевск" class="element__box-image">
                 <div class="element__content">
@@ -39,46 +40,7 @@
                     <button type="button" class="element__like"></button>
                 </div>
             </div>
-
-            <div class="element">
-                <img src="./images/elements/Dombai.jpg" alt="Домбай" class="element__box-image">
-                <div class="element__content">
-                    <h2 class="element__header">Домбай</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </div>
-
-            <div class="element">
-                <img src="./images/elements/sergiev-posad.jpg" alt="Сергиев-Посад" class="element__box-image">
-                <div class="element__content">
-                    <h2 class="element__header">Сергиев-Посад</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </div>
-
-            <div class="element">
-                <img src="./images/elements/Elbrus.jpg" alt="Эльбрус" class="element__box-image">
-                <div class="element__content">
-                    <h2 class="element__header">Эльбрус</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </div>
-
-            <div class="element">
-                <img src="./images/elements/lisbon.jpg" alt="Лиссабон" class="element__box-image">
-                <div class="element__content">
-                    <h2 class="element__header">Лиссабон</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </div>
-
-            <div class="element">
-                <img src="./images/elements/abrau.jpg" alt="Абрау-Дюрсо" class="element__box-image">
-                <div class="element__content">
-                    <h2 class="element__header">Абрау-Дюрсо</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </div>
+            </template>
 
         </section>
 
@@ -89,14 +51,26 @@
         <p class="footer__text">© 2020 Mesto Russia</p>
     </footer>
 
-    <div class="popup">
+    <div class="popup edit-profile">
         <div class="popup__container">
-            <button class="popup__icon" type="button"></button>
+            <button class="popup__icon edit-profile_close-icon" type="button"></button>
             <h3 class="popup__header">Редактировать профиль</h3>
             <form class="popup__form" name="profile-name">
                 <input class="popup__input popup__input_text_name" type="text" name="name" placeholder="Ваше имя" value="">
                 <input class="popup__input popup__input_text_profession" type="text" name="profession" placeholder="Ваша профессия" value=""/>
                 <button class="popup__button" type="submit">Сохранить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup add-item">
+        <div class="popup__container">
+            <button class="popup__icon add-item_close-icon" type="button"></button>
+            <h3 class="popup__header">Новое место</h3>
+            <form class="popup__form" name="new-item">
+                <input class="popup__input popup__input_text_item-name" type="text" name="item-name" placeholder="Название" value="">
+                <input class="popup__input popup__input_text_item-link" type="text" name="link" placeholder="Ссылка на картинку" value=""/>
+                <button class="popup__button" type="submit">Создать</button>
             </form>
         </div>
     </div>
