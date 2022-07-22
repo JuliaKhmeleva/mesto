@@ -34,10 +34,13 @@
 
             <template id="item-card">
             <div class="element">
-                <img src="./images/elements/Karachaevsk.jpg" alt="Карачаевск" class="element__box-image">
+                <div class="element__image">
+                    <img src="./images/elements/Karachaevsk.jpg" alt="Карачаевск" class="element__box-image">
+                    <button type="button" class="element__trash"></button>
+                </div>
                 <div class="element__content">
                     <h2 class="element__header">КарачаевскКарачаевскКарачаевск</h2>
-                    <button type="button" class="element__like"></button>
+                    <button type="button" class="element__like element__bg"></button>
                 </div>
             </div>
             </template>
@@ -67,11 +70,21 @@
         <div class="popup__container">
             <button class="popup__icon add-item_close-icon" type="button"></button>
             <h3 class="popup__header">Новое место</h3>
-            <form class="popup__form" name="new-item">
+            <form class="popup__form form-item" name="new-item">
                 <input class="popup__input popup__input_text_item-name" type="text" name="item-name" placeholder="Название" value="">
                 <input class="popup__input popup__input_text_item-link" type="text" name="link" placeholder="Ссылка на картинку" value=""/>
                 <button class="popup__button" type="submit">Создать</button>
             </form>
+        </div>
+    </div>
+
+    <div class="popup full-image">
+        <div class="popup__full-image_conteiner">
+            <button class="popup__full-image_close-icon" type="button"></button>
+            <div class="popup__content">
+                <img src="./images/elements/abrau.jpg" alt="Карачаевск" class="popup__content_image">
+                <h3 class="popup__content_header">Карачаевск</h3>
+            </div>
         </div>
     </div>
 

@@ -1,0 +1,15 @@
+.popup__image_close-icon {
+    position: absolute;
+    cursor: pointer;
+    background-image: url(../../../../images/pop-up/Close-Icon.svg);
+    background-color: transparent;
+    background-position: center;
+    border: none;
+    width: 32px;
+    height: 32px;
+}
+
+.popup__content_image {
+    max-width: 75vw;
+    max-height: 75vh;
+}
