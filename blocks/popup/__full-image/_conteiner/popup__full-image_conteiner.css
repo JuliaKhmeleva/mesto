@@ -1,0 +1,6 @@
+.popup__full-image_conteiner {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    
+}
