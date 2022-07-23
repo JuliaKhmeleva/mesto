@@ -1,7 +1,7 @@
 let popup = document.querySelector('.edit-profile');
 
 let button = document.querySelector('.profile__edit-icon');
-let closeButton = document.querySelector('.profile_close-icon');
+let closeButton = document.querySelector('.close-icon__profile');
 
 let inputName = document.querySelector('.popup__input_text_name');
 let inputProfession = document.querySelector('.popup__input_text_profession');
@@ -45,7 +45,7 @@ formElement.addEventListener('submit', formSubmitHandler);
 
 let popupAddItem = document.querySelector('.add-item');
 let buttonAddItem = document.querySelector('.profile__add-button');
-let buttonCloseAddItem = document.querySelector('.item_close-icon');
+let buttonCloseAddItem = document.querySelector('.close-icon_item');
 
 let inputItemName = document.querySelector('.popup__input_text_item-name');
 let inputItemLink = document.querySelector('.popup__input_text_item-link');
@@ -120,7 +120,7 @@ function createCardSimple (link, name) {
   //Открыть попап c картинкой
   let popupOpenImage = cardElement.querySelector('.element__box-image');
   let popupFullImage = document.querySelector('.full-image');
-  let imageCloseIcon =  document.querySelector('.popup__image_close-icon');
+  let imageCloseIcon =  document.querySelector('.close-icon_image');
   let imagePopupConteiner =  document.querySelector('.popup__image');
   let imagePopupHeader = document.querySelector('.popup__header');
 
