@@ -120,7 +120,7 @@ function createCardSimple (link, name) {
   //Открыть попап c картинкой
   let popupOpenImage = cardElement.querySelector('.element__box-image');
   let popupFullImage = document.querySelector('.full-image');
-  let imageCloseIcon =  document.querySelector('.icon_close_image');
+  let imageCloseIcon =  document.querySelector('.popup__icon_close_image');
   let imagePopupConteiner =  document.querySelector('.popup__image');
   let imagePopupHeader = document.querySelector('.popup__header');
 

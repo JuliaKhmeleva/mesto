@@ -7,7 +7,7 @@
     margin-left: 8px;
     margin-bottom: 8px;
     cursor: pointer;
-    background-image: url(../../../../images/pop-up/Close-Icon.svg);
+    background-image: url(../../../../../images/pop-up/Close-Icon.svg);
     background-color: transparent;
     background-position: center;
     border: none;
@@ -24,6 +24,6 @@
         margin-bottom: 16px;
         left: auto;
         right: 0;
-        background-image: url(../../../../images/pop-up/Close-Icon_mobile.svg);
+        background-image: url(../../../../../images/pop-up/Close-Icon_mobile.svg);
     }
 }
