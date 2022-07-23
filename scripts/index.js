@@ -1,7 +1,7 @@
 let popup = document.querySelector('.edit-profile');
 
 let button = document.querySelector('.profile__edit-icon');
-let closeButton = document.querySelector('.icon_close_profile');
+let closeButton = document.querySelector('.popup__icon_close_profile');
 
 let inputName = document.querySelector('.popup__input_text_name');
 let inputProfession = document.querySelector('.popup__input_text_profession');
@@ -45,7 +45,7 @@ formElement.addEventListener('submit', formSubmitHandler);
 
 let popupAddItem = document.querySelector('.add-item');
 let buttonAddItem = document.querySelector('.profile__add-button');
-let buttonCloseAddItem = document.querySelector('.icon_close_item');
+let buttonCloseAddItem = document.querySelector('.popup__icon_close_item');
 
 let inputItemName = document.querySelector('.popup__input_text_item-name');
 let inputItemLink = document.querySelector('.popup__input_text_item-link');
