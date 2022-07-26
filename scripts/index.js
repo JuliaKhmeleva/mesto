@@ -120,6 +120,7 @@ function createCardSimple (link, name) {
   const cardElement = cardTemplate.querySelector('.element').cloneNode(true);
   const popupOpenImage = cardElement.querySelector('.element__box-image');
   const getLike = cardElement.querySelector('.element__like');
+  const deleteCard = cardElement.querySelector('.element__trash');
 
   cardElement.querySelector('.element__box-image').src = link;
   cardElement.querySelector('.element__box-image').alt = "Фотография";
@@ -131,7 +132,6 @@ function createCardSimple (link, name) {
   })
 
   //Удалить карточку
-  const deleteCard = cardElement.querySelector('.element__trash');
   deleteCard.addEventListener('click', function (event) {
     cardElement.remove();
   })
