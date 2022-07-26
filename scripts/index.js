@@ -10,6 +10,51 @@ const profileProfession = document.querySelector('.profile__profession');
 const popupFullImage = document.querySelector('.full-image');
 const imageCloseIcon =  document.querySelector('.popup__icon_close_image');
 const cardTemplate = document.querySelector('#item-card').content;
+const formElementItem = document.querySelector('.form-item');
+
+// Находим форму в DOM
+const formElement = document.querySelector('.popup__form');
+
+//попап добавления карточки
+const popupAddItem = document.querySelector('.add-item');
+const buttonAddItem = document.querySelector('.profile__add-button');
+const buttonCloseAddItem = document.querySelector('.popup__icon_close_item');
+const inputItemName = document.querySelector('.popup__input_text_item-name');
+const inputItemLink = document.querySelector('.popup__input_text_item-link');
+
+ //Открыть попап c картинкой
+ const imagePopupConteiner =  document.querySelector('.popup__image');
+ const imagePopupHeader = document.querySelector('.popup__header');
+
+
+
+
+const initialCards = [
+  {
+    name: 'Архыз',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+  },
+  {
+    name: 'Челябинская область',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+  },
+  {
+    name: 'Иваново',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+  },
+  {
+    name: 'Камчатка',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+  },
+  {
+    name: 'Холмогорский район',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+  },
+  {
+    name: 'Байкал',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+  }
+];
 
 
 
@@ -40,7 +85,6 @@ profileEditCloseButton.addEventListener('click', closeProfilePopup);
 
 
 // Находим форму в DOM
-const formElement = document.querySelector('.popup__form');
 
 function handleProfileFormSubmit (evt) {
     evt.preventDefault(); 
@@ -49,25 +93,14 @@ function handleProfileFormSubmit (evt) {
     closeProfilePopup();
 }
 
-
 formElement.addEventListener('submit', handleProfileFormSubmit); 
 
 
 //попап добавления карточки
 
-const popupAddItem = document.querySelector('.add-item');
-const buttonAddItem = document.querySelector('.profile__add-button');
-const buttonCloseAddItem = document.querySelector('.popup__icon_close_item');
-
-const inputItemName = document.querySelector('.popup__input_text_item-name');
-const inputItemLink = document.querySelector('.popup__input_text_item-link');
-const ItemName = document.querySelector('.element__header');
-const ItemLink = document.querySelector('.element__box-image');
-
 function openAddItem() {
+    formElementItem.reset();
     openPopup(popupAddItem);
-    inputItemName.value = ItemName.textContent;
-    inputItemLink.value = ItemLink.textContent;
 }
 
 
@@ -81,46 +114,20 @@ buttonCloseAddItem.addEventListener('click', closeAddItem);
 
 
 
-const initialCards = [
-    {
-      name: 'Архыз',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
-    },
-    {
-      name: 'Челябинская область',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-    },
-    {
-      name: 'Иваново',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-    },
-    {
-      name: 'Камчатка',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-    },
-    {
-      name: 'Холмогорский район',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
-    },
-    {
-      name: 'Байкал',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
-    }
-  ];
-
 
   //создание карточки с данными
 function createCardSimple (link, name) {
   const cardElement = cardTemplate.querySelector('.element').cloneNode(true);
+  const popupOpenImage = cardElement.querySelector('.element__box-image');
+  const getLike = cardElement.querySelector('.element__like');
+
   cardElement.querySelector('.element__box-image').src = link;
   cardElement.querySelector('.element__box-image').alt = "Фотография";
   cardElement.querySelector('.element__header').textContent = name;
 
   // Поставить лайк
-  const getLike = cardElement.querySelector('.element__like');
   getLike.addEventListener('click', function (event) {
     getLike.classList.toggle('element__bg-selected');
-    console.log(getLike.classList);
   })
 
   //Удалить карточку
@@ -130,9 +137,6 @@ function createCardSimple (link, name) {
   })
 
   //Открыть попап c картинкой
-  const popupOpenImage = cardElement.querySelector('.element__box-image');
-  const imagePopupConteiner =  document.querySelector('.popup__image');
-  const imagePopupHeader = document.querySelector('.popup__header');
 
   function openPopupFullImage() {
     openPopup(popupFullImage);
@@ -147,11 +151,7 @@ function createCardSimple (link, name) {
 
   return cardElement;
 }  
-
-
   initialCards.forEach(function(item){
-    console.log(item);
-
     const cardElement = createCardSimple (item.link, item.name);
     const blockofItems = document.querySelector('.elements');
     blockofItems.append(cardElement);
@@ -160,11 +160,9 @@ function createCardSimple (link, name) {
 
 
 
-//вставляют карточку с данными из попапа на страницу и закрыть попап
+//вставляю карточку с данными из попапа на страницу и закрыть попап
 
-let formElementItem = document.querySelector('.form-item');
-
-function formAddItem(evt) {
+function addFormItem(evt) {
     evt.preventDefault();
     const cardEl = createCardSimple(inputItemLink.value, inputItemName.value);
     const blockofItems = document.querySelector('.elements');
@@ -173,7 +171,7 @@ function formAddItem(evt) {
     closeAddItem();
 }
 
-formElementItem.addEventListener('submit', formAddItem); 
+formElementItem.addEventListener('submit', addFormItem); 
 
 
 //Закрыть попап с картинкой
