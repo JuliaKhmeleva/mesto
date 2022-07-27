@@ -11,6 +11,7 @@ const popupFullImage = document.querySelector('.full-image');
 const imageCloseIcon =  document.querySelector('.popup__icon_close_image');
 const cardTemplate = document.querySelector('#item-card').content;
 const formElementItem = document.querySelector('.form-item');
+const blockofItems = document.querySelector('.elements');
 
 // Находим форму в DOM
 const formElement = document.querySelector('.popup__form');
@@ -153,7 +154,6 @@ function createCardSimple (link, name) {
 }  
   initialCards.forEach(function(item){
     const cardElement = createCardSimple (item.link, item.name);
-    const blockofItems = document.querySelector('.elements');
     blockofItems.append(cardElement);
 
   })
@@ -165,7 +165,6 @@ function createCardSimple (link, name) {
 function addFormItem(evt) {
     evt.preventDefault();
     const cardEl = createCardSimple(inputItemLink.value, inputItemName.value);
-    const blockofItems = document.querySelector('.elements');
     blockofItems.prepend(cardEl);
 
     closeAddItem();
