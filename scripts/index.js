@@ -116,6 +116,7 @@ buttonCloseAddItem.addEventListener('click', closeAddItem);
 
 
 
+
   //создание карточки с данными
 function createCardSimple (link, name) {
   const cardElement = cardTemplate.querySelector('.element').cloneNode(true);
@@ -181,9 +182,21 @@ function closePopupFullImage() {
 
 imageCloseIcon.addEventListener('click', closePopupFullImage);
 
+//const imageCloseEsc = (e) => {
+  //if (e.keyCode == 27) {
+  //  closePopupFullImage();
+//}
+
+//window.onkeydown = function( event ) {
+  //if ( event.keyCode == 27 ) {
+      //console.log( 'escape pressed' );
+  //}
+//};
 
 
+const overlay = document.querySelector('.popup');
 
+overlay.addEventListener('click', closePopupFullImage);
 
 
 
