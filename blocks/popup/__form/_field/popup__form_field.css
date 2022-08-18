@@ -1,5 +1,4 @@
-
-  .form-item__field {
+.popup__form_field {
     display: flex;
     flex-direction: column;
   }
