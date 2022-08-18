@@ -87,7 +87,6 @@ const buttonElement = document.querySelectorAll('.popup__button');
   
   enableValidation();
 
-  //прописать стили для баттон
-  //и в хтмл условия валидити
+  
 
 
