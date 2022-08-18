@@ -48,11 +48,11 @@
 @import url(../blocks/popup/__image/popup__image.css);
 @import url(../blocks/popup/__image-header/popup__image-header.css);
 @import url(../blocks/popup/__input-error/popup__input-error.css);
+@import url(../blocks/popup/__form/_field/popup__form_field.css);
 
 
 
 @import url(../blocks/form/__input/type_error/form__input_type_error.css);
-@import url(../blocks/form-item/__field/form-item__field.css);
 
 @import url(../blocks/button/_inactive/button_inactive.css);
 

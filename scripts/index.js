@@ -209,8 +209,8 @@ imageCloseIcon.addEventListener('click', closePopupFullImage);
 //esc закрытие попапов 
 
 function handleKeydownPopupClose(evt) {
-  evt.preventDefault();
   if (evt.which === 27) {
+    evt.preventDefault();
     const openedPopup = document.querySelector('.popup_opened');
     closePopup(openedPopup);
   }
