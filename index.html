@@ -55,17 +55,17 @@
     </footer>
 
     <div class="popup edit-profile">
-        <div class="popup__container">
+        <div class="popup__container popup__overlay">
             <button class="popup__icon popup__icon_close_profile" type="button"></button>
             <h3 class="popup__header">Редактировать профиль</h3>
             <form class="popup__form" name="profile-name" novalidate>
                 <label class="form-item__field">
-                    <input class="popup__input popup__input_text_name" type="text" name="name" placeholder="Ваше имя" value="" required minlength="2" maxlength="40"/>
-                    <span class="popup__input-error item-name_error"></span>
+                    <input id="author-name" class="popup__input popup__input_text_name" type="text" name="name" placeholder="Ваше имя" value="" required minlength="2" maxlength="40"/>
+                    <span class="popup__input-error author-name_error"></span>
                 </label>
                 <label class="form-item__field">
-                    <input class="popup__input popup__input_text_profession" type="text" name="profession" placeholder="Ваша профессия" value="" required minlength="2" maxlength="200"/>
-                    <span class="popup__input-error item-name_error"></span>
+                    <input id="profession-name" class="popup__input popup__input_text_profession" type="text" name="profession" placeholder="Ваша профессия" value="" required minlength="2" maxlength="200"/>
+                    <span class="popup__input-error profession-name_error"></span>
                 </label>
                 <button class="popup__button" type="submit">Сохранить</button>
             </form>
@@ -73,7 +73,7 @@
     </div>
 
     <div class="popup add-item">
-        <div class="popup__container">
+        <div class="popup__container popup__overlay">
             <button class="popup__icon popup__icon_close_item" type="button"></button>
             <h3 class="popup__header">Новое место</h3>
             <form class="popup__form form-item" name="new-item" novalidate>
@@ -90,8 +90,8 @@
         </div>
     </div>
 
-    <div class="popup full-image">
-        <div class="popup__image-conteiner">
+    <div class="popup full-image ">
+        <div class="popup__image-conteiner popup__overlay">
             <button class="popup__icon popup__icon_close_image" type="button"></button>
             <div class="popup__content">
                 <img src="./images/elements/abrau.jpg" alt="Карачаевск" class="popup__image">

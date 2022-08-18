@@ -25,7 +25,7 @@ const inputItemLink = document.querySelector('.popup__input_text_item-link');
 
  //Открыть попап c картинкой
  const imagePopupConteiner =  document.querySelector('.popup__image');
- const imagePopupHeader = document.querySelector('.popup__header');
+ const imagePopupHeader = document.querySelector('.popup__image-header');
 
 
 
@@ -182,29 +182,41 @@ function closePopupFullImage() {
 
 imageCloseIcon.addEventListener('click', closePopupFullImage);
 
-//const imageCloseEsc = (e) => {
-  //if (e.keyCode == 27) {
-  //  closePopupFullImage();
-//}
-
-//window.onkeydown = function( event ) {
-  //if ( event.keyCode == 27 ) {
-      //console.log( 'escape pressed' );
-  //}
-//};
-
-
-const overlay = document.querySelector('.popup');
-
-overlay.addEventListener('click', closePopupFullImage);
 
 
 
 
 
 
+//закрытие попапов по оверлей
+
+  const overlayList = Array.from(document.querySelectorAll('.popup'));
+  overlayList.forEach((overlay) => {
+    const container = overlay.querySelector('.popup__overlay');
+    
+    container.addEventListener('click',  function (evt) {
+      evt.stopPropagation();
+    })
+    overlay.addEventListener('click', function() {
+      closePopup(overlay);
+    }
+    )
+    
+  });
 
 
+
+//esc закрытие попапов 
+
+function handleKeydownPopupClose(evt) {
+  evt.preventDefault();
+  if (evt.which === 27) {
+    const openedPopup = document.querySelector('.popup_opened');
+    closePopup(openedPopup);
+  }
+}
+
+document.addEventListener('keydown', handleKeydownPopupClose);
 
 
 
