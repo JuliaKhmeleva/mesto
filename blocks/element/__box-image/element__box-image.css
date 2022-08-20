@@ -1,7 +1,7 @@
 
 .element__box-image {
     width: 282px;
-    height: 282px;
+    height: 100%;
     box-sizing: content-box;
     background-position: center;
     position: relative;

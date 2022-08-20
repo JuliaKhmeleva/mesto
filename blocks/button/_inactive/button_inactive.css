@@ -6,6 +6,7 @@
     border-radius: 2px;
     padding: 0;
     opacity: 20%;
+    pointer-events: none;
   }
   .button_inactive:hover {
     opacity: 20%;
