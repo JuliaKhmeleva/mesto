@@ -14,7 +14,7 @@ const formElementItem = document.querySelector('.form-item');
 const blockofItems = document.querySelector('.elements');
 
 // Находим форму в DOM
-const formElement = document.querySelector('.popup__form');
+const formElement = document.querySelector('.form-profile');
 
 //попап добавления карточки
 const popupAddItem = document.querySelector('.add-item');
@@ -26,6 +26,11 @@ const inputItemLink = document.querySelector('.popup__input_text_item-link');
  //Открыть попап c картинкой
  const imagePopupConteiner =  document.querySelector('.popup__image');
  const imagePopupHeader = document.querySelector('.popup__image-header');
+
+ //для сброса кнопки
+
+ const inputList = Array.from(formElementItem.querySelectorAll('.popup__input'));
+ const buttonElement = formElementItem.querySelector('.popup__button');
 
 
 
@@ -61,6 +66,7 @@ const initialCards = [
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
+  document.addEventListener('keydown', handleKeydownPopupClose);
 }
 
 function closePopup(popup) {
@@ -99,8 +105,17 @@ formElement.addEventListener('submit', handleProfileFormSubmit);
 
 //попап добавления карточки
 
+function resetForm(formElement) {
+  formElement.reset();
+  const buttonElement = formElement.querySelector('.popup__button');
+  buttonElement.classList.add('button_inactive');
+  buttonElement.disabled = true;
+  
+}
+
+
 function openAddItem() {
-    formElementItem.reset();
+    resetForm(formElementItem);
     openPopup(popupAddItem);
 }
 
@@ -124,8 +139,8 @@ function createCardSimple (link, name) {
   const getLike = cardElement.querySelector('.element__like');
   const deleteCard = cardElement.querySelector('.element__trash');
 
-  cardElement.querySelector('.element__box-image').src = link;
-  cardElement.querySelector('.element__box-image').alt = "Фотография";
+  popupOpenImage.src = link;
+  popupOpenImage.alt = "Фотография";
   cardElement.querySelector('.element__header').textContent = name;
 
   // Поставить лайк
@@ -209,7 +224,7 @@ imageCloseIcon.addEventListener('click', closePopupFullImage);
 //esc закрытие попапов 
 
 function handleKeydownPopupClose(evt) {
-  if (evt.which === 27) {
+  if (evt.key === 'Escape') {
     evt.preventDefault();
     const openedPopup = document.querySelector('.popup_opened');
     closePopup(openedPopup);
