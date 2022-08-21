@@ -14,7 +14,7 @@ const formElementItem = document.querySelector('.form-item');
 const blockofItems = document.querySelector('.elements');
 
 // Находим форму в DOM
-const formElement = document.querySelector('.form-profile');
+const formElementProfile = document.querySelector('.form-profile');
 
 //попап добавления карточки
 const popupAddItem = document.querySelector('.add-item');
@@ -71,6 +71,7 @@ function openPopup(popup) {
 
 function closePopup(popup) {
   popup.classList.remove('popup_opened');
+  document.removeEventListener('keydown', handleKeydownPopupClose);
 }
 
 
@@ -100,7 +101,7 @@ function handleProfileFormSubmit (evt) {
     closeProfilePopup();
 }
 
-formElement.addEventListener('submit', handleProfileFormSubmit); 
+formElementProfile.addEventListener('submit', handleProfileFormSubmit); 
 
 
 //попап добавления карточки
@@ -231,7 +232,7 @@ function handleKeydownPopupClose(evt) {
   }
 }
 
-document.addEventListener('keydown', handleKeydownPopupClose);
+
 
 
 

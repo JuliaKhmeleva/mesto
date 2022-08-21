@@ -71,11 +71,7 @@
     const formList = Array.from(document.querySelectorAll(settings.formSelector));
 
     formList.forEach((formElement) => {
-      formElement.addEventListener('submit', function (evt) {
-        evt.preventDefault();
-      });
-
-      setEventListeners(formElement, settings);
+        setEventListeners(formElement, settings);
     });
   };
   
